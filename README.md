@@ -32,6 +32,16 @@ git config --global user.email
 git config --global user.name
 ```
 
+- **Verificar se existe um repositório remoto**
+```
+git remote
+```
+
+- ****
+```
+```
+
+
 - **Adicionar arquivos do repositório local na staged area (uma área intermediária antes de dar um commit)**
 ```
 git add .                            // adiciona todos os arquivos locais
@@ -133,10 +143,11 @@ git push origin :[nome do branch]
 git branch -d [nome do branch]
 ````
 
-**Leva as modificações do master para o branch**
+**Leva as modificações do master para um branch específico**
 ````
-git rebase
+git rebase master 
 ````
+Não necessariamente o master, pode ser outro branch criado.
 
 - ****
 ```
