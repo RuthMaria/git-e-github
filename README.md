@@ -209,3 +209,6 @@ git tag -d [nome da tag]
 - **Fork e pull request**
 
 O `fork` faz a clonagem de um repositório de terceiro diretamente para o seu GitHub. Assim, as alterações realizadas no projeto clonado não afetará o projeto original. Caso deseje alterar o projeto original é necessário dar um `pull request`, assim as alterações serão sinalizadas ao dono do projeto original, que avaliará se aceita ou não as mudanças sugeridas. O `pull request` é uma ótima forma de contribuir com os projetos da comunidade.
+
+- **gitignore**
+Para o git ignorar determinados arquivos da pasta do repositório, e estes arquivos não serem comitados, é preciso criar um arquivo txt sem nome e com a extensão .gitignore. E dentro desse arquivo colocar a lista de arquivos que não serão comitados.  Cada arquivo deve estar em uma linha.
