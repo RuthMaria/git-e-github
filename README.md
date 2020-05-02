@@ -1,4 +1,4 @@
-# INTRODUÇÃO AO GIT
+## INTRODUÇÃO AO GIT
 
 **Git** é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo. (Fonte: wikipédia.)
 
@@ -32,15 +32,15 @@ git config --global user.email
 git config --global user.name
 ```
 
-- **Verificar se existe um repositório remoto**
+- **Verificar qual o repositório remote que está linkado**
 ```
-git remote
-```
-
-- ****
-```
+git remote -v
 ```
 
+- **Clonar o repositório do GitHub na máquina local**
+```
+git clone [url do repositório do github]
+```
 
 - **Adicionar arquivos do repositório local na staged area (uma área intermediária antes de dar um commit)**
 ```
@@ -67,6 +67,16 @@ git commit --amend -m "mensagem do commit"  // edita o último commit feito
 git reset --hard [codigo_do_commit]  // apaga todas as modificações que esse commit fez
 ```
 
+- **Enviar o estado atual da pasta local para o servidor do GitHub**
+```
+git push
+```
+
+- **Baixar atualizações do repositório do GitHub para o repositório local**
+```
+git pull
+```
+
 - **Mostrar as modificações feitas em cada arquivo**
 ```
 git diff            // mostra as modificações feitas nos arquivos do repositório local
@@ -83,8 +93,6 @@ git log --pretty=oneline           // mostra o código completo de cada commit e
 git log --oneline                 // mostra os 7 primeiros dígitos do código de cada commit e a mensagem
 git log --oneline --graph --all  // mostra o gráfico de commits simplificado
 git log --graph --all           // mostra o gráfico de commits detalhado, apertar a letra “q” para voltar a linha de comando
-
-
 ```
 
 - **Verificar a situação atual do repositório local**
@@ -95,6 +103,21 @@ git status     // mostra o que tem pra comitar, arquivos novos, deletados, etc
 - **Criar um arquivo**
 ```
 touch [nome_do_arquivo.extensão]
+```
+
+- **Criar uma  pasta**
+```
+mkdir [nome da pasta]
+```
+
+- **Descartar as mudanças realizadas em um arquivo**
+```
+git checkout -- [nome_do_arquivo.extensão]
+```
+
+- **Remover um arquivo**
+```
+git rm [ome_do_arquivo.extensão]
 ```
 
 - **Voltar para uma determinada versão do projeto**
