@@ -6,9 +6,9 @@
 
 ### **Instalação**
 1. Baixe a última versão do git
-2. Abra o Git Bash no repositório do seu projeto local ou clone um projeto
+2. Abra o Git Bash no diretório que deseja clonar o repositório remoto do GitHub e, em seguida, clone o repositório do GitHub
 
-Agora, já pode utilizar os comandos a seguir. Os comandos que estiverem entre [] é o dado que precisa ser inserido.
+Agora, utilize os comandos a seguir. Os comandos que estiverem entre [] é o dado que precisa ser inserido.
 
 
 ## Comandos básicos
@@ -49,7 +49,7 @@ git add [nome_do_arquivo.extensão]  // adiciona um determinado arquivo
 git add *.[extensão]               // adiciona todos os arquivos de uma determinada extensão 
 ```
 
-- **Remover um arquivo da staged area (depois de ter dado o comando 'git add. ')**
+- **Remover um arquivo da staged area (depois de ter dado o comando 'git add .')**
 ```
 git reset HEAD [nome_do_arquivo.extensão]
 git restore --staged [nome_do_arquivo.extensão]
@@ -80,7 +80,7 @@ git pull
 - **Mostrar as modificações feitas em cada arquivo**
 ```
 git diff            // mostra as modificações feitas nos arquivos do repositório local
-git diff --staged  // mostra as modificações feitas nos arquivos da staged area, ou seja, após já ter dado o 'git add.'
+git diff --staged  // mostra as modificações feitas nos arquivos da staged area, ou seja, após já ter dado o 'git add .'
 ```
 
 - **Mostrar todos os commits do projeto**
@@ -128,24 +128,24 @@ git checkout master                // volta novamente para a versão atual, a ma
 
 - **BRANCHES**
 
-São ramificações dentro do controle de versão. O Branch permite que se trabalhe com várias ramificações e segmentações diferentes de um sistema, onde um commit de uma ramificação não altera a outra ramificação. Permite trabalhar com várias versões do sistema, assim pode-se fazer vários teste e mudançãs no código que não interferirá no projeto original.
+São ramificações dentro do controle de versão. O Branch permite que se trabalhe com várias ramificações e segmentações diferentes de um sistema, onde um commit de uma ramificação não altera a outra ramificação. Permite trabalhar com várias versões do sistema, assim pode-se fazer vários testes e mudanças no código que não alterará o projeto original.
   
-**Cria um novo branch**
+**Criar um branch**
 ````
 git branch [nome do branch]
 ````
 
-**Escolhe o branch que será usado no momento**
+**Escolher o branch que será utilizado**
 ````
 git checkout  [nome do branch]
 ````
 
-**cria um novo branch e já o escolhe para ser usado, substitui os dois comandos de cima**
+**criar um branch e o escolher para ser usado (substitui os dois comandos anteriores)**
 ````
 git checkout -b [nome do branch]
 ````
 
-**Lista todos os branches criados**
+**Listar todos os branches criados**
 ````
 git branch
 ````
@@ -172,7 +172,40 @@ git rebase master
 ````
 Não necessariamente o master, pode ser outro branch criado.
 
-- ****
+- **TAGS**
+
+É uma etiqueta, um ponto de atalho para um determinado status do sistema. Geralmente os desenvolvedores criam tags para fazer marcações nas versões diferentes de um sistema. Tipo: versão 1.0, versão 1.1, versão 1.2... Assim é possível baixar uma determinada versão de um projeto.
+
+**Mostrar todas as tags do projeto**
 ```
+git tag 
 ```
 
+**Criar uma tag**
+```
+git tag -a [nome da tag] -m "mensagem da tag" 
+```
+
+**Criar uma tag de um commit já feito no repositório**
+```
+git tag -a [nome da tag] [código do commit] -m "mensagem da tag" 
+```
+
+**Mostrar os detalhes da tag informada**
+```
+git show [nome da tag]
+```
+
+**O repositório local volta para a versão da tag associada**
+```
+git checkout [nome da tag] 
+```
+
+**Remover uma tag já criada**
+```
+git tag -d [nome da tag] 
+```
+
+- **Fork e pull request**
+
+O `fork` faz a clonagem de um repositório de terceiro diretamente para o seu GitHub. Assim, as alterações realizadas no projeto clonado não afetará o projeto original. Caso deseje alterar o projeto original é necessário dar um `pull request`, assim as alterações serão sinalizadas ao dono do projeto original, que avaliará se aceita ou não as mudanças sugeridas. O `pull request` é uma ótima forma de contribuir com os projetos da comunidade.
