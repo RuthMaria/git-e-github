@@ -213,4 +213,10 @@ O `fork` faz a clonagem de um repositório de terceiro diretamente para o seu Gi
 
 - **gitignore**
 
-Para o git ignorar determinados arquivos da pasta do repositório, e estes arquivos não serem comitados, é preciso criar um arquivo txt sem nome e com a extensão .gitignore. E dentro desse arquivo colocar a lista de arquivos que não serão comitados.  Cada arquivo deve estar em uma linha.
+Para o git ignorar determinados arquivos da pasta do repositório, e estes arquivos não serem comitados, é preciso criar um arquivo txt sem nome e com a extensão .gitignore na raiz do projeto. E dentro do arquivo .gitignore colocar a lista de arquivos que não serão comitados, onde cada arquivo deve estar em uma linha.
+
+Caso queira ignorar um arquivo que já foi comitado anteriormente, apenas colocá-lo no arquivo .gitignore não resolverá, é necessário limpar a staged area (o cache local), para isso use o comando:
+```
+git rm -r --cached [nome arquivo]
+```
+Em seguida, adicione os arquivos que entrará no versionamento `git add .` e comite as atualizações `git commit -m "mensagem do commit"`. 
