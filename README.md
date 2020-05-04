@@ -156,17 +156,17 @@ git merge [nome do branch]
 ````
 No momento da integração, haverá conflitos entre a versão teste e a versão master, o merge não será realizado até os conflitos terem sido resolvidos. Que conflitos são esses? Dados diferentes no arquivo da versão teste e da versão master. No arquivo do projeto serão criados linhas com o `<<<<<<<<< HEAD`, indicando onde está havendo o conflito. 
 
-**Remove o branch do repositório local**
+**Remover o branch do repositório local**
 ````
 git push origin :[nome do branch]
 ````
 
-**Remove o branch do repositório do GitHub**
+**Remover o branch do repositório do GitHub**
 ````
 git branch -d [nome do branch]
 ````
 
-**Leva as modificações do master para um branch específico**
+**Levar as modificações do master para um branch específico**
 ````
 git rebase master 
 ````
