@@ -1,11 +1,15 @@
-<h2 align="center"> :information_source: INTRODUÇÃO AO GIT </h2><br>
+<h2 align="center"> :information_source: Introdução ao GIT e GITHUB</h2><br>
 
 ## :books: Sobre
-<p align="justify"><strong>
-Pequeno resumo sobre os principais comandos do Git e GitHub. <br>
-Git</strong> é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo. (Fonte: wikipédia.)</p>
+
+
+<p align="justify">
+Pequeno resumo dos principais comandos do Git e GitHub. <br><br>
+<strong>Git</strong> é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo. (Fonte: wikipédia.)</p>
 
 <p align="justify"><strong>GitHub</strong> é uma plataforma de hospedagem de código-fonte com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo. (Fonte: wikipédia)</p>
+
+<br>
 
 ### **Instalação**
 * Baixe a última versão do [Git](https://git-scm.com/)
@@ -13,8 +17,11 @@ Git</strong> é um sistema de controle de versões distribuído, usado principal
 
 Agora, utilize os comandos a seguir. Os comandos que estiverem entre [] é o dado que precisa ser inserido.
 
+<br>
 
 ## :memo: Comandos básicos
+
+<br>
 
 - **Criar repositório local**
 ```
